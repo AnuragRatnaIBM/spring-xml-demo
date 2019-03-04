@@ -1,20 +1,22 @@
 package com.stackroute.domain;
 
 public class Movie {
-    private Actor actor;
+    private Actor actorFirst;
+    private Actor actorSecond;
+    private Actor actorThird;
 
-    public Actor getActor() {
-        return actor;
-    }
-
-    public void setActor(Actor actor) {
-        this.actor = actor;
+    public Movie(Actor actorFirst, Actor actorSecond, Actor actorThird) {
+        this.actorFirst = actorFirst;
+        this.actorSecond = actorSecond;
+        this.actorThird = actorThird;
     }
 
     @Override
     public String toString() {
         return "Movie{" +
-                "actor=" + actor +
+                "actorFirst=" + actorFirst +
+                ", actorSecond=" + actorSecond +
+                ", actorThird=" + actorThird +
                 '}';
     }
 }
