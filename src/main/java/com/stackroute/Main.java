@@ -12,5 +12,7 @@ public class Main {
         System.out.println(movieA);
         Movie movieB=(Movie)applicationContext.getBean("movieB");
         System.out.println(movieB);
+        ((ClassPathXmlApplicationContext)(applicationContext)).registerShutdownHook();
+//        Movie movieC=(Movie)applicationContext.getBean("beanLifeCycle");
     }
 }

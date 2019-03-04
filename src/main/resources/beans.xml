@@ -28,4 +28,6 @@
 
     <bean class="com.stackroute.domain.Movie" id="movieB" scope="prototype" autowire="constructor">
     </bean>
+
+    <bean id="beanLifeCycle" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"></bean>
 </beans>
